@@ -17,6 +17,18 @@
 
     <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18234578070"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18234578070'); </script>
+    <!-- Event snippet for Contato via Whatsapp conversion page -->
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener("click", function (e) {
+        e.composedPath().forEach(function (e) {
+            if (e.hostname == 'wa.me' || e.hostname == 'web.whatsapp.com' || e.hostname == 'api.whatsapp.com' || e.hostname == 'wa.link') {
+                gtag('event', 'conversion', {'send_to': 'AW-18234578070/uUanCKmyzs0cEJap9vZD'});
+            }
+        })
+    });
+})
+</script>
 </head>
 
 <body>
